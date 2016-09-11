@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zry.mvp.MainActivity" >
+
+ <Button
+     android:id="@+id/btn_login"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_below="@+id/et_pw"
+     android:layout_centerHorizontal="true"
+     android:layout_marginTop="20dp"
+     android:text="Login" />
+
+ <EditText
+     android:id="@+id/et_name"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentTop="true"
+      android:layout_centerHorizontal="true"
+     android:layout_marginTop="150dp"
+     android:ems="10"
+     android:hint="用户名" />
+
+ <EditText
+     android:id="@+id/et_pw"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignLeft="@+id/et_name"
+     android:layout_below="@+id/et_name"
+     android:layout_marginTop="21dp"
+     android:ems="10"
+     android:hint="密码" >
+
+     <requestFocus />
+ </EditText>
+
+</RelativeLayout>
