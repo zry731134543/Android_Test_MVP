@@ -27,7 +27,7 @@ public class Database {
 	 * @param context
 	 * @return Database实例
 	 */
-	public static Database getInstance(Context context) {
+	public static synchronized Database getInstance(Context context) {
 		if (database == null) {
 			database = new Database(context);
 		}
